@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}home{% endblock %}
+{% block body %}
+<!-- Hero -->
+<div class="p-5 text-center bg-image rounded-3" style="
+    background-image: url('/static/images/alexander-shatov-PEJtZfT6C1Q-unsplash.jpg');
+    height: 550px;background-size:contain;
+  ">
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="mb-3">CHATBOX</h1>
+        <h4 class="mb-3">Welcome to CHATBOX</h4>
+        <h5 class="mb-3">This is a chat web apllication built using flask scocket io.</h5>
+        <h6 class="mb-3">Enjoy</h6>
+        <a class="btn btn-outline-light btn-lg" href="{{url_for('chat')}}" role="button">Start Chating</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hero -->
+{% endblock %}
